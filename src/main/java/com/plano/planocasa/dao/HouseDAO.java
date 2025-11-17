@@ -40,4 +40,4 @@ public class HouseDAO {
         }
         return list;
     }
-}   
+}
