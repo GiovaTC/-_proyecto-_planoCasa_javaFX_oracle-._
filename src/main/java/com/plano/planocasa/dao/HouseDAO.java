@@ -9,7 +9,7 @@ import java.util.List;
 
 public class HouseDAO {
 
-    public static Long saveHouse(House house) throws SQLException {
+    public static Long save(House house) throws SQLException {
         String sql = "INSERT INTO HOUSES(NAME, ADDRESS) VALUES (?, ?)";
         try (Connection c = DBUtil.getConnection();
         PreparedStatement ps = c.prepareStatement(sql, new String[]{"ID"})) {
